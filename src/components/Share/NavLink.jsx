@@ -9,7 +9,7 @@ const NavLink = ({href, children}) => {
   return (
     <Link
       href={href}
-      className={`py-2.5 px-4 flex items-center justify-center gap-1 rounded-lg font-medium ${
+      className={`py-2.5 px-4 flex items-center font-medium justify-center gap-1 rounded-lg ${
         isActive
           ? "bg-[#244D3F] text-white"
           : "text-[#64748B]"

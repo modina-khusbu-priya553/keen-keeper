@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "picture": "https://i.ibb.co/Xf2ZWc31/Sarah.jpg",
+    "email": "sarah.johnson@example.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": [
+      "college",
+      "close friend"
+    ],
+    "bio": "Met in university and became close friends through our love of hiking and coffee.",
+    "goal": 14,
+    "next_due_date": "2026-08-16",
+    "interactions_this_month": 1,
+    "need_attention": true
+  },
+  {
+    "id": 2,
+    "name": "Michael Chen",
+    "picture": "https://i.ibb.co/xqN5nrxQ/ian-dooley-d1-UPki-Fd04-A-unsplash.jpg",
+    "email": "michael.chen@example.com",
+    "days_since_contact": 5,
+    "status": "on_track",
+    "tags": [
+      "work",
+      "tech"
+    ],
+    "bio": "A former coworker who enjoys discussing new technology, startups, and productivity.",
+    "goal": 8,
+    "next_due_date": "2026-08-23",
+    "interactions_this_month": 3,
+    "need_attention": false
+  },
+  {
+    "id": 3,
+    "name": "Emily Carter",
+    "picture": "https://i.ibb.co/Kc8w9cpn/aiony-haust-3-TLl-97-HNJo-unsplash.jpg",
+    "email": "emily.carter@example.com",
+    "days_since_contact": 27,
+    "status": "overdue",
+    "tags": [
+      "school",
+      "best friend"
+    ],
+    "bio": "We studied together and still share regular movie nights and weekend brunches.",
+    "goal": 12,
+    "next_due_date": "2026-08-10",
+    "interactions_this_month": 0,
+    "need_attention": true
+  },
+  {
+    "id": 4,
+    "name": "Daniel Williams",
+    "picture": "https://i.ibb.co/KdJ7ryB/joseph-gonzalez-i-Fg-Rcq-Hznqg-unsplash.jpg",
+    "email": "daniel.williams@example.com",
+    "days_since_contact": 9,
+    "status": "on_track",
+    "tags": [
+      "sports",
+      "friend"
+    ],
+    "bio": "Met through a local football group and often catch up over games and dinner.",
+    "goal": 6,
+    "next_due_date": "2026-08-28",
+    "interactions_this_month": 2,
+    "need_attention": false
+  },
+  {
+    "id": 5,
+    "name": "Olivia Martinez",
+    "picture": "https://i.ibb.co/gFtPRmtg/toa-heftiba-O3ymv-T7-Wf9-U-unsplash.jpg",
+    "email": "olivia.martinez@example.com",
+    "days_since_contact": 14,
+    "status": "due_soon",
+    "tags": [
+      "travel",
+      "close friend"
+    ],
+    "bio": "A travel buddy who loves discovering new cities, restaurants, and hidden cafés.",
+    "goal": 10,
+    "next_due_date": "2026-08-21",
+    "interactions_this_month": 2,
+    "need_attention": true
+  },
+  {
+    "id": 6,
+    "name": "James Anderson",
+    "picture": "https://i.ibb.co/d4qVV4HT/stephanie-nakagawa-ADSKIn0-Sc-Dg-unsplash.jpg",
+    "email": "james.anderson@example.com",
+    "days_since_contact": 3,
+    "status": "on_track",
+    "tags": [
+      "neighbor",
+      "friend"
+    ],
+    "bio": "Lives nearby and is always up for a quick coffee, walk, or casual conversation.",
+    "goal": 4,
+    "next_due_date": "2026-08-29",
+    "interactions_this_month": 4,
+    "need_attention": false
+  },
+  {
+    "id": 7,
+    "name": "Sophia Brown",
+    "picture": "https://i.ibb.co/rKydKJQC/christopher-campbell-r-DEOVt-E7v-Os-unsplash.jpg",
+    "email": "sophia.brown@example.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": [
+      "childhood",
+      "close friend"
+    ],
+    "bio": "A childhood friend who now lives in another city, so we keep in touch mostly online.",
+    "goal": 8,
+    "next_due_date": "2026-08-14",
+    "interactions_this_month": 1,
+    "need_attention": true
+  },
+  {
+    "id": 8,
+    "name": "Alex Thompson",
+    "picture": "https://i.ibb.co/HfyqY0q1/ben-den-engelsen-e-Ny-XK17so6-A-unsplash.jpg",
+    "email": "alex.thompson@example.com",
+    "days_since_contact": 7,
+    "status": "on_track",
+    "tags": [
+      "university",
+      "gaming"
+    ],
+    "bio": "Met at university and bonded over video games, coding projects, and late-night pizza.",
+    "goal": 6,
+    "next_due_date": "2026-08-25",
+    "interactions_this_month": 2,
+    "need_attention": false
+  }
+]
