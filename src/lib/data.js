@@ -5,3 +5,7 @@ export const friendsData = async () =>{
 
 
 }
+export const getFriendById = async (id) => {
+    const friends = await friendsData();
+    return friends.find(f => f.id.toString() === id);
+}
