@@ -5,7 +5,7 @@ import { IoMdAdd } from "react-icons/io";
 const Banner = () => {
   return (
     <div className="bg-[#F8FAFC]">
-      <div className="md:px-60 px-6 md:py-20 py-3 flex flex-col items-center justify-center gap-6 md:gap-10">
+      <div className="md:px-60 px-6 md:py-20 py-3 flex flex-col items-center justify-center gap-6 md:gap-10 container mx-auto">
         {/* title and subtitle */}
         <div className="flex flex-col items-center justify-center gap-4 md:gap-8">
           <div className="text-center space-y-3.5">
@@ -24,9 +24,9 @@ const Banner = () => {
 
         
         {/* cards */}
-        <div className="flex flex-col md:flex-row gap-6 items-stretch justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 md:gap-6 gap-y-4 gap-x-4 w-full">
           <Card
-            className="rounded-lg drop-shadow-sm py-8 px-8 flex-1 min-w-[200px]"
+            className="rounded-lg drop-shadow-sm py-8 px-8 flex-1 md:min-w-[200px]"
             variant="default"
           >
             <Card.Header className="flex justify-center items-center gap-2">
@@ -40,7 +40,7 @@ const Banner = () => {
           </Card>
 
           <Card
-            className="rounded-lg drop-shadow-sm py-8 px-8 flex-1 min-w-[200px]"
+            className="rounded-lg drop-shadow-sm py-8 px-8 flex-1 md:min-w-[200px]"
             variant="default"
           >
             <Card.Header className="flex justify-center items-center gap-2">
@@ -54,7 +54,7 @@ const Banner = () => {
           </Card>
 
           <Card
-            className="rounded-lg drop-shadow-sm py-8 px-8 flex-1 min-w-[200px]"
+            className="rounded-lg drop-shadow-sm py-8 px-8 flex-1 md:min-w-[200px]"
             variant="default"
           >
             <Card.Header className="flex justify-center items-center gap-2">
@@ -68,7 +68,7 @@ const Banner = () => {
           </Card>
 
           <Card
-            className="rounded-lg drop-shadow-sm py-8 px-8 flex-1 min-w-[200px]"
+            className="rounded-lg drop-shadow-sm py-8 px-8 flex-1 md:min-w-[200px]"
             variant="default"
           >
             <Card.Header className="flex justify-center items-center gap-2">

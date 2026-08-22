@@ -5,7 +5,7 @@
     "picture": "https://i.ibb.co/Xf2ZWc31/Sarah.jpg",
     "email": "sarah.johnson@example.com",
     "days_since_contact": 18,
-    "status": "overdue",
+    "status": "Overdue",
     "tags": [
       "college",
       "close friend"
@@ -22,7 +22,7 @@
     "picture": "https://i.ibb.co/xqN5nrxQ/ian-dooley-d1-UPki-Fd04-A-unsplash.jpg",
     "email": "michael.chen@example.com",
     "days_since_contact": 5,
-    "status": "on_track",
+    "status": "On-Track",
     "tags": [
       "work",
       "tech"
@@ -39,7 +39,7 @@
     "picture": "https://i.ibb.co/Kc8w9cpn/aiony-haust-3-TLl-97-HNJo-unsplash.jpg",
     "email": "emily.carter@example.com",
     "days_since_contact": 27,
-    "status": "overdue",
+    "status": "Overdue",
     "tags": [
       "school",
       "best friend"
@@ -56,7 +56,7 @@
     "picture": "https://i.ibb.co/KdJ7ryB/joseph-gonzalez-i-Fg-Rcq-Hznqg-unsplash.jpg",
     "email": "daniel.williams@example.com",
     "days_since_contact": 9,
-    "status": "on_track",
+    "status": "On-Track",
     "tags": [
       "sports",
       "friend"
@@ -73,7 +73,7 @@
     "picture": "https://i.ibb.co/gFtPRmtg/toa-heftiba-O3ymv-T7-Wf9-U-unsplash.jpg",
     "email": "olivia.martinez@example.com",
     "days_since_contact": 14,
-    "status": "due_soon",
+    "status": "Almost Due",
     "tags": [
       "travel",
       "close friend"
@@ -87,10 +87,10 @@
   {
     "id": 6,
     "name": "James Anderson",
-    "picture": "https://i.ibb.co/d4qVV4HT/stephanie-nakagawa-ADSKIn0-Sc-Dg-unsplash.jpg",
+    "picture": "https://i.ibb.co/KdJ7ryB/joseph-gonzalez-i-Fg-Rcq-Hznqg-unsplash.jpg",
     "email": "james.anderson@example.com",
     "days_since_contact": 3,
-    "status": "on_track",
+    "status": "On-Track",
     "tags": [
       "neighbor",
       "friend"
@@ -107,7 +107,7 @@
     "picture": "https://i.ibb.co/rKydKJQC/christopher-campbell-r-DEOVt-E7v-Os-unsplash.jpg",
     "email": "sophia.brown@example.com",
     "days_since_contact": 21,
-    "status": "overdue",
+    "status": "Overdue",
     "tags": [
       "childhood",
       "close friend"
@@ -124,7 +124,7 @@
     "picture": "https://i.ibb.co/HfyqY0q1/ben-den-engelsen-e-Ny-XK17so6-A-unsplash.jpg",
     "email": "alex.thompson@example.com",
     "days_since_contact": 7,
-    "status": "on_track",
+    "status": "Almost Due",
     "tags": [
       "university",
       "gaming"
