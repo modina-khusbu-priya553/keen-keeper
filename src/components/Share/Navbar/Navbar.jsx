@@ -1,13 +1,13 @@
 'use client'
 import React from 'react';
-import Link from 'next/link';
 import { useState } from "react";
-import Logo from "../../../public/assets/logo.png"
+import Logo from "../../../../public/assets/logo.png"
 import Image from 'next/image';
 import { IoMdHome } from 'react-icons/io';
-import NavLink from './NavLink';
+
 import { FaRegClock } from 'react-icons/fa';
 import { GoGraph } from 'react-icons/go';
+import NavLink from './NavLink';
 
 const Navbar = () => {
 
