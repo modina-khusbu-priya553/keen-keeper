@@ -19,7 +19,7 @@ const Navbar = () => {
             <NavLink href={'/'}><IoMdHome />Home</NavLink>
         </li>
         <li>
-            <NavLink href={'#'}><FaRegClock />Timeline</NavLink>
+            <NavLink href={'/timeline'}><FaRegClock />Timeline</NavLink>
         </li>
         <li>
             <NavLink href={'#'}><GoGraph />Sats</NavLink>

@@ -12,7 +12,7 @@ const FriendDetailsPage = async({params}) => {
     return <div>Friend not found</div>;
   }
     return (
-        <div className='bg-[#F8FAFC] md:py-20 py-8 md:px-60 px-6'>
+        <div className='bg-[#F8FAFC] lg:py-20 py-8 lg:px-60 px-6'>
           <div className='container mx-auto'>
             <DetailsCard friend={friend}></DetailsCard>
         </div>  
