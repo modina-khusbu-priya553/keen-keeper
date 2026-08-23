@@ -1,11 +1,14 @@
+'use client'
+import { addCallInLocalDB, getCallFromLocalDB } from "@/utils/localDB";
 import { Button, Card, Chip } from "@heroui/react";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { FiArchive, FiPhoneCall } from "react-icons/fi";
 import { IoMdVideocam } from "react-icons/io";
 import { LuMessageSquareText } from "react-icons/lu";
 import { PiBellZBold } from "react-icons/pi";
 import { RiDeleteBin5Line } from "react-icons/ri";
+import { toast } from "react-toastify";
 
 const DetailsCard = ({ friend }) => {
   const {
@@ -27,6 +30,44 @@ const DetailsCard = ({ friend }) => {
     if (statuses === "On-Track") return "bg-[#244D3F]";
     return "";
   };
+
+// calls
+  const [storeCalls, setStoreCalls] = useState(() => getCallFromLocalDB());
+
+  const handleCalls = (currentCall) =>{
+
+    addCallInLocalDB(currentCall)
+    const isCalls = storeCalls.find((friend) => friend.id === currentCall.id);
+    if(!isCalls){
+        setStoreCalls([...storeCalls, currentCall]);
+    }
+     toast.success(`Call with ${currentCall.name}`);
+  }
+  
+// text
+
+  const [storeTexts, setStoreTexts] = useState([]);
+
+  const handleText = (currentText) =>{
+    const isCalls = storeTexts.find((friend) => friend.id === currentText.id);
+    if(!isCalls){
+        setStoreTexts([...storeTexts, currentText]);
+    }
+     toast.success(`Text with ${currentText.name}`);
+  }
+
+//   videoCall
+
+const [storeVideo, setStoreVideo] = useState([]);
+
+  const handleVideoCalls = (currentVideo) =>{
+    const isCalls = storeVideo.find((friend) => friend.id === currentVideo.id);
+    if(!isCalls){
+        setStoreVideo([...storeVideo, currentVideo]);
+    }
+     toast.success(`Video call with ${currentVideo.name}`);
+  }
+
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-3 lg:gap-6">
       {/* left */}
@@ -159,54 +200,27 @@ const DetailsCard = ({ friend }) => {
             Quick Check in
           </h2>
 
-          <div className="flex gap-2 sm:gap-4 w-full">
+          <div className="flex items-center justify-center gap-2 sm:gap-4 w-full">
             {/* Call */}
-            <Card
-              className="rounded-lg drop-shadow-sm py-4 px-2 sm:py-6 sm:px-4 md:py-8 md:px-8 flex-1 min-w-0"
-              variant="default"
-            >
-              <Card.Header className="flex flex-col justify-center items-center gap-1">
-                <Card.Title className="font-semibold text-[#244D3F] text-lg md:text-2xl">
-                  <FiPhoneCall />
-                </Card.Title>
-
-                <Card.Description className="text-[#64748B] text-center text-xs sm:text-sm">
-                  Call
-                </Card.Description>
-              </Card.Header>
-            </Card>
+            <Button onClick={()=> handleCalls(friend)} className="flex flex-col bg-[#F8FAFC] w-full border border-gray-200 rounded-lg drop-shadow-sm py-8 px-8">
+                <FiPhoneCall className="font-semibold text-[#244D3F] text-lg md:text-2xl"/>
+                <span className="text-black text-sm">call</span>
+            </Button>
+            
 
             {/* Text */}
-            <Card
-              className="rounded-lg drop-shadow-sm py-4 px-2 sm:py-6 sm:px-4 md:py-8 md:px-8 flex-1 min-w-0"
-              variant="default"
-            >
-              <Card.Header className="flex flex-col justify-center items-center gap-1">
-                <Card.Title className="font-semibold text-[#244D3F] text-lg md:text-2xl">
-                  <LuMessageSquareText />
-                </Card.Title>
-
-                <Card.Description className="text-[#64748B] text-center text-xs sm:text-sm">
-                  Text
-                </Card.Description>
-              </Card.Header>
-            </Card>
+            <Button onClick={()=> handleText(friend)} className="flex flex-col bg-[#F8FAFC] w-full border border-gray-200 rounded-lg drop-shadow-sm  py-8 px-8">
+                <LuMessageSquareText className="font-semibold text-[#244D3F] text-lg md:text-2xl"/>
+                 <span className="text-black text-sm">Text</span>
+            </Button>
+            
 
             {/* Video */}
-            <Card
-              className="rounded-lg drop-shadow-sm py-4 px-2 sm:py-6 sm:px-4 md:py-8 md:px-8 flex-1 min-w-0"
-              variant="default"
-            >
-              <Card.Header className="flex flex-col justify-center items-center gap-1">
-                <Card.Title className="font-semibold text-[#244D3F] text-lg md:text-2xl">
-                  <IoMdVideocam />
-                </Card.Title>
-
-                <Card.Description className="text-[#64748B] text-center text-xs sm:text-sm">
-                  Video
-                </Card.Description>
-              </Card.Header>
-            </Card>
+            <Button onClick={()=> handleVideoCalls(friend)} className="flex flex-col bg-[#F8FAFC] w-full border border-gray-200 rounded-lg drop-shadow-sm  py-8 px-8">
+                <IoMdVideocam className="font-semibold text-[#244D3F] text-lg md:text-2xl"/>
+                <span className="text-black text-sm">Video</span>
+            </Button>
+            
           </div>
         </Card>
       </div>
