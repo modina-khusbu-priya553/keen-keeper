@@ -1,8 +1,10 @@
-
+'use client'
 import Filter from '@/components/Card/Filter';
-import React from 'react';
+import React, { useState } from 'react';
 
 const TimeLinePage = () => {
+
+    const [timeline, setTimeline] = useState([]);
     return (
         <div className='bg-[#F8FAFC] lg:py-20 py-8 lg:px-60 px-6'>
             <div className='container mx-auto'>

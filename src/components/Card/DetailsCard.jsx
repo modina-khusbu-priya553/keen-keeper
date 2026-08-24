@@ -1,5 +1,5 @@
 'use client'
-import { addCallInLocalDB, getCallFromLocalDB } from "@/utils/localDB";
+import { addCallInLocalDB, addTextInLocalDB, addVideoInLocalDB, getCallFromLocalDB, getTextFromLocalDB, getVideoFromLocalDB } from "@/utils/localDB";
 import { Button, Card, Chip } from "@heroui/react";
 import Image from "next/image";
 import React, { useState } from "react";
@@ -46,9 +46,11 @@ const DetailsCard = ({ friend }) => {
   
 // text
 
-  const [storeTexts, setStoreTexts] = useState([]);
+  const [storeTexts, setStoreTexts] = useState(() => getTextFromLocalDB());
 
   const handleText = (currentText) =>{
+
+    addTextInLocalDB(currentText);
     const isCalls = storeTexts.find((friend) => friend.id === currentText.id);
     if(!isCalls){
         setStoreTexts([...storeTexts, currentText]);
@@ -58,9 +60,11 @@ const DetailsCard = ({ friend }) => {
 
 //   videoCall
 
-const [storeVideo, setStoreVideo] = useState([]);
+const [storeVideo, setStoreVideo] = useState(() => getVideoFromLocalDB());
 
   const handleVideoCalls = (currentVideo) =>{
+
+    addVideoInLocalDB(currentVideo);
     const isCalls = storeVideo.find((friend) => friend.id === currentVideo.id);
     if(!isCalls){
         setStoreVideo([...storeVideo, currentVideo]);
