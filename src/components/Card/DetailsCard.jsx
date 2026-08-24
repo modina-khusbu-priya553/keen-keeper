@@ -208,7 +208,7 @@ const [storeVideo, setStoreVideo] = useState(() => getVideoFromLocalDB());
             {/* Call */}
             <Button onClick={()=> handleCalls(friend)} className="flex flex-col bg-[#F8FAFC] w-full border border-gray-200 rounded-lg drop-shadow-sm py-8 px-8">
                 <FiPhoneCall className="font-semibold text-[#244D3F] text-lg md:text-2xl"/>
-                <span className="text-black text-sm">call</span>
+                <span className="text-black text-sm">Call</span>
             </Button>
             
 
