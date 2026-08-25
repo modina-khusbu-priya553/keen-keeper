@@ -41,7 +41,7 @@ const TimeLinePage = () => {
 
   return (
     <div className="bg-[#F8FAFC] lg:py-20 py-8 lg:px-60 px-6">
-      <div className="container mx-auto">
+      <div className="container mx-auto flex flex-col gap-8">
         {/* upper */}
         <div className="space-y-6 ">
           <h2 className="font-bold md:text-2xl lg:text-5xl text-lg">

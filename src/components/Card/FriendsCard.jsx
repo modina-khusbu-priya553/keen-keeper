@@ -14,7 +14,7 @@ const FriendsCard = ({ friend }) => {
   }
   return (
     <Link href={`/Friends/${id}`}>
-      <Card className="min-w-[200px] gap-3 items-center justify-center rounded-lg">
+      <Card className="gap-3 items-center justify-center rounded-lg">
         <Image
           alt="Indie Hackers community"
           width={56}
