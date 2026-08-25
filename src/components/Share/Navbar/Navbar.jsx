@@ -22,7 +22,7 @@ const Navbar = () => {
             <NavLink href={'/timeline'}><FaRegClock />Timeline</NavLink>
         </li>
         <li>
-            <NavLink href={'#'}><GoGraph />Sats</NavLink>
+            <NavLink href={'/stats'}><GoGraph />Sats</NavLink>
         </li>
                 
       </>

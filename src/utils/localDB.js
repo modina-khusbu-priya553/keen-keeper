@@ -35,11 +35,11 @@ export const addTextInLocalDB = (text) => {
 
 // video
 export const getVideoFromLocalDB = () =>{
-    const allVideo = localStorage.getItem('storeVideo');
+     const allVideo = localStorage.getItem('storeVideos');
     if (allVideo) return JSON.parse(allVideo);
-
     return [];
 }
+
 
 export const addVideoInLocalDB = (video) => {
     const allVideos = JSON.parse(localStorage.getItem('storeVideos') || '[]');
